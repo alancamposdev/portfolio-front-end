@@ -1,2 +1,3 @@
 # Arquivos para ser ignorados
-.reserved-area/
+.reserved/
+.reserved/to-do.md
