@@ -1,0 +1,16 @@
+
+
+/* global variables */
+:root{
+  /* color  */
+  --primary-color: #fdaf75;
+  --secondary-color:;
+  --bg-color:;
+  --tx-color:;
+   /* fonts  */
+   --font-primary:;
+}
+
+p{
+  color:red;
+}
