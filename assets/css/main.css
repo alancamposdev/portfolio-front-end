@@ -1,16 +1,35 @@
-
-
 /* global variables */
-:root{
+:root {
   /* color  */
-  --primary-color: #fdaf75;
-  --secondary-color:;
-  --bg-color:;
-  --tx-color:;
-   /* fonts  */
-   --font-primary:;
+  --primary-color: #2F3C4F;
+  --secondary-color: #506F86;
+  --tertiary-color: #D6E6F2;
+  --tx-color: #f5f5f5;
+  --em-color: #FBB040;
+
+  /* fonts  */
+  /* --font-primary:; */
 }
 
-p{
-  color:red;
+body {
+  font-family: sans-serif;
+}
+
+/* sections  */
+section {
+  min-height: 90vh;
+  background-color: var(--tx-color);
+}
+
+section:nth-child(even) {
+  background: var(--secondary-color);
+}
+
+.container,
+.header_container {
+  max-width: 1200px;
+  max-height: 100%;
+  border: 2px solid lightgray;
+  margin: 0 auto;
+  padding: 6.9rem 3rem;
 }

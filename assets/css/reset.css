@@ -4,12 +4,14 @@
   box-sizing: border-box;
 }
 
-html,body{
+html,
+body {
   min-width: 100vw;
   min-height: 100vh;
 }
 
-ul,li {
+ul,
+li {
   list-style: none;
 }
 
