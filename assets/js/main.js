@@ -1,5 +1,4 @@
 // Links ativos dinamicos
-
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('.header_link');
 
@@ -22,3 +21,12 @@ window.onscroll = () =>{
     }
   })
 }
+
+// ativas o btn mobile atraves da classse 'active'
+let btnMobile = document.querySelector('.btn-mobile');
+let menu = document.querySelector('.header_nav');
+
+btnMobile.addEventListener('click', () => {
+  menu.classList.toggle('active'); 
+ 
+})
