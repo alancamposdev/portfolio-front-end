@@ -26,7 +26,14 @@ window.onscroll = () =>{
 let btnMobile = document.querySelector('.btn-mobile');
 let menu = document.querySelector('.header_nav');
 
-btnMobile.addEventListener('click', () => {
-  menu.classList.toggle('active'); 
+btnMobile.addEventListener('click', (event) => {
+  menu.classList.toggle('active');
+  const active =  menu.classList.contains('active')
+  event.currentTarget.setAttribute('aria-expanded',active);
+  if(active) {
+    event.currentTarget.setAttribute('aria-label','Fechar Menu');
+  }else{
+    event.currentTarget.setAttribute('aria-label','Abrir Menu');
+  }
  
 })
