@@ -35,7 +35,12 @@ btnMobile.addEventListener("click", (event) => {
     event.currentTarget.setAttribute("aria-label", "Abrir Menu");
   }
 });
-
-
+//fechando o menu ao clicar
+let links = document.querySelectorAll('.header_link');
+links.forEach((link)=>{ 
+ link.addEventListener('click', () =>{  
+  document.querySelector('.header_nav').classList.remove('active');
+ })
+});
 
 
