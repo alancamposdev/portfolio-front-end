@@ -3,7 +3,6 @@
   min-height: 3rem;
   background: var(--primary-color);
   color: var(--tx-color);
-
 }
 
 .footer__container {
@@ -13,6 +12,7 @@
   flex-direction: column;
   margin: 0 auto;
   padding: 3rem 0 0;
+  border: none;
 
 }
 
@@ -20,7 +20,6 @@
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-
 }
 
 .footer__box {
@@ -45,7 +44,7 @@
   margin-bottom: 10px;
 }
 
-.footer__box:nth-last-child(1){
+.footer__box:nth-last-child(1) {
   text-align: center;
 }
 
@@ -102,7 +101,7 @@ a {
   font-size: 30px;
   box-shadow: 2px 2px 3px #999;
   z-index: 100;
-  animation: zoom 2s  10s ease-in-out infinite;
+  animation: zoom 2s 10s ease-in-out infinite;
 }
 
 .whatsapp-float:hover {
@@ -121,6 +120,7 @@ a {
 .shapedividers {
   overflow: hidden;
   position: relative;
+
 }
 
 .shapedividers::before {
@@ -138,6 +138,7 @@ a {
   background-position: 50% 100%;
   transform: rotateY(180deg);
   background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.28 2.17" preserveAspectRatio="none"><path d="M35.28 1.67c-3.07-.55-9.27.41-16.15 0-6.87-.4-13.74-.58-19.13.1v.4h35.28z" fill="%232f3c4f"/></svg>');
+
 }
 
 @media (min-width:768px) {
@@ -185,13 +186,15 @@ a {
 }
 
 @keyframes zoom {
-  0%{
+  0% {
     transform: scale(1)
   }
-  50%{
+
+  50% {
     transform: scale(1.1)
   }
-  100%{
+
+  100% {
     transform: scale(1)
   }
 }

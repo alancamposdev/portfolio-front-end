@@ -1,6 +1,6 @@
-.contact .container { 
+.contact > .container { 
   display: block;
-  padding: 3rem 1rem;
+  padding: 6rem 1rem;
   min-height: 60vh;
   color: var(--tx-color);
   border: none;
@@ -17,7 +17,7 @@
 .contact-content{
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem; 
+  gap: 1rem;   
   
 }
 
@@ -109,12 +109,15 @@
 
 }
 
-@media (max-width: 720px){
-  
-
+@media(max-width: 720px){
   .contact-content{
-    /* flex-direction: column;
-    flex-wrap: wrap;
-    gap: 1rem;   */
+    flex-direction: column;
+    padding: 1rem;
+  }
+}
+@media(max-width: 319px){
+  .contact-content{
+    flex-direction: column;
+    padding:0;
   }
 }

@@ -9,7 +9,7 @@
   /* background: rgba(255, 255, 255, .1);
   backdrop-filter: bluer(10px); */
   color: var(--tx-color);
-  z-index: 999;
+  z-index: 100;
 }
 
 .header_container {
@@ -20,7 +20,7 @@
   justify-content: space-between;
   padding: 0 3rem;
   margin: 0 auto;
-  border: 1px solid;
+  border: none;
 }
 
 .header_logo {
@@ -40,7 +40,7 @@
 }
 
 .header_nav {
-  display: flex;
+  display: flex;  
 
 }
 

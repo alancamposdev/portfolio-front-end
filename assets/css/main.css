@@ -12,8 +12,10 @@
   --font-jura: 'Jura', sans-serif;
 }
 
+html,
 body {  
   font-family: var(--font-jura);
+  scroll-behavior: smooth;
 
 }
 
@@ -22,8 +24,14 @@ section {
   background-color: var(--tx-color);
 }
 
-section:nth-child(even) {
+section:nth-child(odd) {
   background: var(--secondary-color);
+}
+
+/* seção de espaçamento por tras do header  */
+section.space{
+  background: var(--primary-color);
+  height: 6rem;
 }
 
 .container {
@@ -36,3 +44,4 @@ section:nth-child(even) {
   margin: 0 auto;
   /* padding: 6.9rem 3rem; */
 }
+
